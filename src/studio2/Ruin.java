@@ -20,15 +20,16 @@ public class Ruin {
 		int totalSimulations = in.nextInt();
 		
 		
-		//double winning = Math.random()*100;
-		//System.out.println(winning);
-		
 		int i = 0;
 		
+		//Simulator
 		while (i!=totalSimulations) {
 		
+			System.out.println("-------------------------\nDay " + (i+1));
+			//Reset money gambler has
 			double money = startAmount; 
 			
+			//Each game they play until they win big or lose all
 			while (money>0 && money<winLimit) {
 				double winning = Math.random()*100;
 				boolean win = winning<winChance;
@@ -41,6 +42,7 @@ public class Ruin {
 				}
 			}
 			
+				//How the day went
 				if (money == 0) {
 					System.out.println("The day was a ruin");
 					i +=1;
