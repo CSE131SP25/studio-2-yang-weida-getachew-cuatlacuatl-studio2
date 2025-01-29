@@ -34,10 +34,10 @@ public class Ruin {
 				double winning = Math.random()*100;
 				boolean win = winning<winChance;
 				if(win) {
-					System.out.println("win");
+					System.out.println("win :)");
 					money+=1;
 				} else {
-					System.out.println("lose");
+					System.out.println("lose :(");
 					money-=1;
 				}
 			}
